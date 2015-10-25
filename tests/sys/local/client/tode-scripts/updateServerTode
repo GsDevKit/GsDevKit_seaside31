@@ -1,0 +1,3 @@
+# no backups on travis - https://github.com/dalehenrich/tode/issues/226
+project load Tode             # load the project
+bu snapshot --commit tode.dbf # make a snapshot of initial tODE install with /sys structures in place
