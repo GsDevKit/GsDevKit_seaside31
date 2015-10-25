@@ -1,4 +1,4 @@
-TDObjectGatewayNode{#name:'seaside31',#contents:'^ TDProjectSpecEntryDefinition new
+TDObjectGatewayNode{#name:'seaside3',#contents:'^ TDProjectSpecEntryDefinition new
     baseline: \'Seaside3\'
       repository: \'github://GsDevKit/Seaside31:3.1.?/repository\'
       loads: #(\'Welcome\' \'Development\' \'Zinc\' \'Examples\');
