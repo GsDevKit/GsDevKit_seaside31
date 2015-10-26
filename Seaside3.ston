@@ -1,7 +1,26 @@
-TDObjectGatewayNode{#name:'Seaside3',#contents:'^ TDProjectSpecEntryDefinition new
+TDObjectGatewayNode{#name:'seaside',#contents:'^ TDProjectSpecEntryDefinition new
     baseline: \'Seaside3\'
-      repository: \'github://GsDevKit/Seaside31:3.1.?/repository\'
+      repository: \'github://GsDevKit/Seaside31:gs_master/repository\'
       loads: #(\'Welcome\' \'Development\' \'Zinc\' \'Examples\');
     status: #(#\'inactive\');
     locked: false;
+    bootstrapBlock: [ :topez |
+          | gitTool gitRootDir gitRepoDirectory mountTool directoryOrFilePath |
+          gitTool := topez toolInstanceFor: \'git\'.
+          gitRootDir := ServerFileDirectory
+            on: TDProjectEntryDefinition defaultGitRootPath.
+          gitTool
+            gitcloneIn: gitRootDir
+            with: \'--no-checkout github://GsDevKit/GsDevKit_seaside.git\'.
+          gitRepoDirectory := gitRootDir directoryNamed: \'GsDevKit_seaside\'.
+          gitTool gitcheckoutIn: gitRepoDirectory with: \'gs_master\'.
+          mountTool := topez toolInstanceFor: \'mount\'.
+          directoryOrFilePath := (mountTool
+            resolveAtPathReference: \'@/_home/projects/GsDevKit_seaside/tode\')
+            pathName.
+          mountTool
+            mount: directoryOrFilePath
+            at: \'/home\'
+            as: \'seaside31\'
+            visitAsLeafNode: false ];
     yourself'}
