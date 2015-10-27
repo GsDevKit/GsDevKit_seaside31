@@ -5,7 +5,7 @@ TDObjectGatewayNode{#name:'Seaside3',#contents:'^ TDProjectSpecEntryDefinition n
     status: #(#\'inactive\');
     locked: false;
     installTodeScript: \'
-      project clone --https --checkout=master --projects --github=GsDevKit_seaside31
+      project clone --https --checkout=master --projects --github=GsDevKit/GsDevKit_seaside31
       mount @/_home/projects/GsDevKit_seaside31/tode /home seaside31\';
     loadTodeScript: \'
       /home/seaside31/cloneSeasideProjects
