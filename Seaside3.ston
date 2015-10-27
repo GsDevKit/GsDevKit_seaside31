@@ -1,13 +1,12 @@
-TDObjectGatewayNode{#name:'Seaside3',#contents:'^ TDProjectSpecEntryDefinition new
+TDObjectGatewayNode{#name:'Seaside3',#contents:'^ TDExternalProjectSpecEntryDefinition new
     baseline: \'Seaside3\'
-      repository: \'github://GsDevKit/Seaside31:gs_master/repository\'
       loads: #(\'Welcome\' \'Development\' \'Zinc\' \'Examples\');
     status: #(#\'inactive\');
     locked: false;
-    installTodeScript: \'
+    installScript: \'
       project clone --https --checkout=master --projects --github=GsDevKit/GsDevKit_seaside31
       mount @/_home/projects/GsDevKit_seaside31/tode /home seaside31\';
-    loadTodeScript: \'
+    loadScript: \'
       /home/seaside31/cloneSeasideProjects
       /home/seaside31/installSeaside\' ;
     yourself'}
