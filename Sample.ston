@@ -3,6 +3,5 @@
     status: #(#'inactive');
     locked: false;
     installScript:
-        'project clone --https --checkout=master --shared --github=dalehenrich/sample';
-    loadScript: 'project load Sample';
+        'project clone --https --checkout=master --shared Sample';
     yourself
