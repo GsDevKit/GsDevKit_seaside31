@@ -1,7 +1,7 @@
 ^ TDProjectSpecEntryDefinition new
-    baseline: 'Sample' loads: #('Core');
-    status: #(#'inactive');
+    baseline: \'Sample\' loads: #(\'Core\');
+    status: #(#\'inactive\');
     locked: false;
     installScript:
-        'project clone --https --checkout=master --shared Sample';
+        \'project clone --https --checkout=master --shared Sample\';
     yourself
