@@ -1,6 +1,4 @@
-TDObjectGatewayNode{#name:'Seaside3',#contents:'^ TDExternalProjectSpecEntryDefinition new
-    baseline: \'Seaside3\'
-      loads: #(\'Welcome\' \'Development\' \'Zinc\' \'Examples\');
+TDObjectGatewayNode{#name:'Seaside31',#contents:'^ TDExternalProjectSpecEntryDefinition new
     status: #(#\'inactive\');
     locked: false;
     installScript: \'project clone --https --checkout=master --projects --github=GsDevKit/GsDevKit_seaside31
