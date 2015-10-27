@@ -25,4 +25,8 @@ TDObjectGatewayNode{#name:'Seaside3',#contents:'^ TDProjectSpecEntryDefinition n
             at: \'/home\'
             as: \'seaside31\'
             visitAsLeafNode: false ];
+    loadBlock: [:topez |
+        topez evaluateCommandString: 
+          \'/home/seaside31/createSeasideProjects
+            /home/seaside31/installSeaside\' ];
     yourself'}
