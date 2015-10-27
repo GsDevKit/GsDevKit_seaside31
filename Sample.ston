@@ -1,4 +1,4 @@
-^ TDExternalProjectSpecEntryDefinition new
+^ TDProjectSpecEntryDefinition new
     baseline: 'Sample' loads: #('Core');
     status: #(#'inactive');
     locked: false;
