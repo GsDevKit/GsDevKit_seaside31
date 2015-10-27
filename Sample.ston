@@ -1,0 +1,8 @@
+^ TDExternalProjectSpecEntryDefinition new
+    baseline: 'Sample' loads: #('Core');
+    status: #(#'inactive');
+    locked: false;
+    installScript:
+        'project clone --https --checkout=master --shared --github=dalehenrich/sample';
+    loadScript: 'project load Sample';
+    yourself
