@@ -11,7 +11,7 @@ TDObjectGatewayNode{#name:'Seaside3',#contents:'^ TDProjectSpecEntryDefinition n
             on: TDProjectEntryDefinition defaultGitRootPath.
           gitTool
             gitcloneIn: gitRootDir
-            with: \'--no-checkout github://GsDevKit/GsDevKit_seaside.git\'.
+            with: \'--no-checkout https://github.com/GsDevKit/GsDevKit_seaside.git\'.
           gitRepoDirectory := gitRootDir directoryNamed: \'GsDevKit_seaside\'.
           gitTool gitcheckoutIn: gitRepoDirectory with: \'gs_master\'.
           mountTool := topez toolInstanceFor: \'mount\'.
