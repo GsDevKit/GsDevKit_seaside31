@@ -4,7 +4,7 @@ TDObjectGatewayNode{#name:'Seaside3',#contents:'^ TDProjectSpecEntryDefinition n
       loads: #(\'Welcome\' \'Development\' \'Zinc\' \'Examples\');
     status: #(#\'inactive\');
     locked: false;
-    bootstrapBlock: [ :topez |
+    cloneBlock: [ :topez |
           | gitTool gitRootDir gitRepoDirectory mountTool directoryOrFilePath |
           gitTool := topez toolInstanceFor: \'git\'.
           gitRootDir := ServerFileDirectory
