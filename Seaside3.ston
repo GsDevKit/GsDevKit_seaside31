@@ -4,29 +4,10 @@ TDObjectGatewayNode{#name:'Seaside3',#contents:'^ TDProjectSpecEntryDefinition n
       loads: #(\'Welcome\' \'Development\' \'Zinc\' \'Examples\');
     status: #(#\'inactive\');
     locked: false;
-    cloneBlock: [ :topez |
-          | gitTool gitRootDir gitRepoDirectory mountTool directoryOrFilePath |
-          gitTool := topez toolInstanceFor: \'git\'.
-          gitRootDir := ServerFileDirectory
-            on: \'$GS_HOME/projects\'.
-          (gitRootDir directoryExists: \'GsDevKit_seaside31\')
-            ifFalse: [
-              gitTool
-                gitcloneIn: gitRootDir
-                with: \'--no-checkout https://github.com/GsDevKit/GsDevKit_seaside31.git\'.
-              gitRepoDirectory := gitRootDir directoryNamed: \'GsDevKit_seaside31\'.
-              gitTool gitcheckoutIn: gitRepoDirectory with: \'master\' ].
-          mountTool := topez toolInstanceFor: \'mount\'.
-          directoryOrFilePath := (mountTool
-            resolveAtPathReference: \'@/_home/projects/GsDevKit_seaside31/tode\')
-            pathName.
-          mountTool
-            mount: directoryOrFilePath
-            at: \'/home\'
-            as: \'seaside31\'
-            visitAsLeafNode: false ];
-    loadBlock: [:topez |
-        topez evaluateCommandString: 
-          \'/home/seaside31/createSeasideProjects
-            /home/seaside31/installSeaside\' ];
+    installTodeScript: \'
+      project clone --https --checkout=master --projects --github=GsDevKit_seaside31
+      mount @/_home/projects/GsDevKit_seaside31/tode /home seaside31\';
+    loadTodeScript: \'
+      /home/seaside31/cloneSeasideProjects
+      /home/seaside31/installSeaside\' ;
     yourself'}
