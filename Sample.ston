@@ -1,8 +1,10 @@
 TDObjectGatewayNode{#name:'Sample',#contents:'^ TDExternalProjectSpecEntryDefinition new
-    baseline: \'Sample\' loads: #(\'Core\');
+    baseline: \'Sample\'
+       repository:
+        \'github://dalehenrich/sample:master/repository\'
+       loads: #(\'Core\');
     status: #(#\'inactive\');
     locked: false;
     installScript:
         \'project clone --https --checkout=master --shared --github=dalehenrich/sample\';
-    loadScript: \'project load Sample\';
     yourself'}
