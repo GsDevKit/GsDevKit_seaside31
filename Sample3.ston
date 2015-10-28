@@ -1,4 +1,5 @@
-TDObjectGatewayNode{#name:'Sample',#contents:'^ TDExternalProjectSpecEntryDefinition new
+TDObjectGatewayNode{#name:'Sample3',#contents:'^ TDExternalProjectSpecEntryDefinition new
+    comment: \'Nothing interesting right now ... duplicate of Sample3.\';
     baseline: \'Sample\'
        repository:
         \'github://dalehenrich/sample:master/repository\'

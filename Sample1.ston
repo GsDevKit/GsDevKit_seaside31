@@ -1,4 +1,5 @@
 TDObjectGatewayNode{#name:'Sample1',#contents:'^ TDProjectSpecEntryDefinition new
+    comment: \'Classic.\';
     baseline: \'Sample\'
        repository:
         \'github://dalehenrich/sample:master/repository\'

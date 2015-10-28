@@ -1,10 +1,11 @@
 TDObjectGatewayNode{#name:'Sample2',#contents:'^ TDProjectSpecEntryDefinition new
+    comment: \'This puppy will clone itself on install.\';
     baseline: \'Sample\'
-       repository:
-        \'github://dalehenrich/sample:master/repository\'
-       loads: #(\'Core\');
+      repository: \'github://dalehenrich/sample:master/repository\'
+      loads: #(\'Core\');
     status: #(#\'inactive\');
+    gitCommit: \'master\';
     locked: false;
-    installScript:
-        \'project clone --https --checkout=master --shared --github=dalehenrich/sample\';
-    yourself'}
+    installScript: \'project clone --https  --shared Sample
+      mount @/_home/shared/repos/sample/tode /home sample\';
+    yourself'}`
