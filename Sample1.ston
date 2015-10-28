@@ -1,0 +1,8 @@
+TDObjectGatewayNode{#name:'Sample1',#contents:'^ TDProjectSpecEntryDefinition new
+    baseline: \'Sample\'
+       repository:
+        \'github://dalehenrich/sample:master/repository\'
+       loads: #(\'Core\');
+    status: #(#\'inactive\');
+    locked: false;
+    yourself'}
