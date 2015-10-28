@@ -7,5 +7,5 @@ TDObjectGatewayNode{#name:'Sample3',#contents:'^ TDExternalProjectSpecEntryDefin
     status: #(#\'inactive\');
     locked: false;
     installScript:
-        \'project clone --https --checkout=master --shared --github=dalehenrich/sample\';
+        \'project clone --https --checkout=master --local --github=dalehenrich/sample\';
     yourself'}

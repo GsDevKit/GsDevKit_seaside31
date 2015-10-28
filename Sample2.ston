@@ -6,6 +6,6 @@ TDObjectGatewayNode{#name:'Sample2',#contents:'^ TDProjectSpecEntryDefinition ne
     status: #(#\'inactive\');
     gitCommit: \'master\';
     locked: false;
-    installScript: \'project clone --https  --shared Sample
+    installScript: \'project clone --https  --local Sample
       mount @/_home/shared/repos/sample/tode /home sample\';
     yourself'}`
