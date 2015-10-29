@@ -5,6 +5,8 @@ TDObjectGatewayLeafNode{#name:'Sample2',#contents:'^ TDProjectSpecEntryDefinitio
     comment: \'This puppy will clone itself on install.\';
     installScript: \'project clone --https --local Sample
       mount @/_home/shared/repos/sample/tode /home sample\';
+    preLoadScript: \'bu backup pre.dbf\';
+    postLoadScript: \'bu backup post.dbf\';
     gitCommit: \'master\';
     status: #(#\'inactive\');
     locked: false;
