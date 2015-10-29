@@ -1,4 +1,4 @@
-TDObjectGatewayNode{#name:'Seaside31',#contents:'^ TDExternalProjectSpecEntryDefinition new
+TDObjectGatewayLeafNode{#name:'Seaside31',#contents:'^ TDExternalProjectSpecEntryDefinition new
     status: #(#\'inactive\');
     locked: false;
     installScript: \'project clone --https --checkout=master --projects --github=GsDevKit/GsDevKit_seaside31

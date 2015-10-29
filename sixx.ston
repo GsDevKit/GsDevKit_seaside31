@@ -1,4 +1,4 @@
-TDObjectGatewayNode{#name:'sixx',#contents:'| project |
+TDObjectGatewayLeafNode{#name:'sixx',#contents:'| project |
 project := TDProjectSpecEntryDefinition new
   baseline: \'SIXX\'
     repository: \'github://glassdb/SIXX:master/repository\'

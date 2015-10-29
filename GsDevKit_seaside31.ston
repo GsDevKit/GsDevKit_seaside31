@@ -1,4 +1,4 @@
-TDObjectGatewayNode{#name:'GsDevKit_seaside31',#contents:'^ TDGitRepositoryEntryDefinition new
+TDObjectGatewayLeafNode{#name:'GsDevKit_seaside31',#contents:'^ TDGitRepositoryEntryDefinition new
     comment: \'Install script clones GsDevKit/GsDevKit_seaside31.\';
     status: #(#\'inactive\');
     gitRepoDirectoryPath: \'\';

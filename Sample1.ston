@@ -1,4 +1,4 @@
-TDObjectGatewayNode{#name:'Sample1',#contents:'^ TDProjectSpecEntryDefinition new
+TDObjectGatewayLeafNode{#name:'Sample1',#contents:'^ TDProjectSpecEntryDefinition new
     comment: \'Classic.\';
     baseline: \'Sample\'
        repository:
