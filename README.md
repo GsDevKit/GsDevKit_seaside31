@@ -58,6 +58,10 @@ Once you've started the webServer, you can use your web browser to connect to th
 
 ##Developing with Seaside
 
+
+
+
+
 ###Debugging remote server errors
 
 While using a webServer gem, errors in the Seaside code will not result in a walkback window popping up. Instead the default error handler snaps off a continuation and puts it into the Object Log.
@@ -92,7 +96,10 @@ When you are debugging a continuation, you cannot step or continuation, but othe
 [4]: http://seaside.st/
 [5]: ../../../docs/images/editProjectEntry.png
 [6]: ../../../docs/images/seasideBrowser.png
-[7]: ../../../docs/images/waCounterbrowser.png
+[7]: docs/FAQ.md#1-how-do-i-debug-an-error-that-appears-in-the-web-server
+
+
+
 [8]: ../../../docs/images/waCounterError.png
 [9]: ../../../docs/images/debugContinuation.png
 [10]: ../../../docs/images/continuationDebugger.png
