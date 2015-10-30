@@ -26,12 +26,13 @@ to open a debugger on the continuation:
 
 When you are debugging a continuation, you cannot step or continuation, but other than that you have a fully functional debugger.
 
-[1]: ../../../docs/images/browseProjectEntry.png
-[2]: ../../../docs/images/projectListMenu.png
-[3]: https://github.com/GsDevKit/Seaside31
-[4]: http://seaside.st/
-[5]: ../../../docs/images/editProjectEntry.png
-[6]: ../../../docs/images/seasideBrowser.png
+[**COMMENTS**][1]
+
+---
+---
+---
+[1]: https://github.com/GsDevKit/GsDevKit_home/issues/new
+
 [7]: ../../../docs/images/waCounterbrowser.png
 [8]: ../../../docs/images/waCounterError.png
 [9]: ../../../docs/images/debugContinuation.png
