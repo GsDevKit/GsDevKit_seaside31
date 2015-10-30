@@ -1,2 +1,7 @@
-### Documentation and installation instructions for the integrated GsDevKit and Seaside environment.  
-For information on setting up GsDevKit environments in which seaside is an option see []
+### Documentation to the GsDevKit Seaside Project
+
+This directory contains documentation on installing and using the GsDevKit and Seaside environment.  
+
+For installation instructions, see [Installation Overview][1] 
+
+[1]: installation/README.md
