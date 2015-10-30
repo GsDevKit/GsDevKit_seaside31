@@ -43,6 +43,7 @@ the same node, or multiple clients, the clients and the servers (stones) are nam
 seaside_3210 for the name of the server (stone), and tode1 for the name of the tODE client. 
 
 ---
+
 # Installation on a single desktop
 You may install the client and server portions at the same time in a shared directory structure.
 This can be done on Linux (desktop) or on Mac.
@@ -56,13 +57,13 @@ This can be done on Linux (desktop) or on Mac.
    2. Install the Seaside Server.  
     
       * [Install Seaside Server][3]
+      
+   4. [Verify the Web Server][14]
 
    3. Install the GsDevKit client.  This will create the tODE client, but not start it up.
 
-      * [Install Client][10]
+      * [Install Client On Same Node][6]
       
-   4. [Verify the Web Server][13]
-   
    3. [Start Using tODE][14]
 
 ---
@@ -79,7 +80,9 @@ The server may be installed on Linux or on Mac, and the client may be on Linux d
 2. Also on the remote node, install the Seaside GsDevKit server. This will create and startup the stone (the GsDevkit 
 server instance).
 
-   * [Install Server][6]
+   * [Install Seaside Server][3]
+   
+4. [Verify the Web Server][14]
 
 3. Log into the Desktop client, on which you will install the GsDevKit client, and configure the OS prerequities that are specific to the client.   
  
@@ -91,7 +94,7 @@ server instance).
 
 4. Install the GsDevKit client.  This will create the tODE client, but not start it up.
 
-    * [Install Client][10]
+    * [Install Client On Separate Node][10]
 
 5. [Start Using tODE][13]
    
@@ -110,9 +113,11 @@ You can connect using X-forwarding from a Linux desktop (that is, a Linux instal
     
       * [Install Seaside Server][3]
 
-   3. Install the GsDevKit client.  This will create the tODE client, but not start it up.
+   4. [Verify the Web Server][14]
 
-      * [Install Client][10]
+   3. Install the GsDevKit client on the same node.  This will create the tODE client, but not start it up.
+
+      * [Install Client on Same Node][6]
 
    3. On the desktop, install any required OS add-ons:
    
@@ -128,23 +133,27 @@ You can connect using X-forwarding from a Linux desktop (that is, a Linux instal
 
    5. [Start Using tODE][13]
  
-[1]: ./configOSForSingleNode.md#configure-linux-desktop-for-both-client-and-server
-[2]: ./configOSForSingleNode.md#configure-mac-for-client-and-server
-[3]: ./installDevKitServerAndClient.md
+[1]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/configOSForSingleNode.md#configure-linux-desktop-for-both-client-and-server
+[2]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/configOSForSingleNode.md#configure-mac-for-client-and-server
+
+[3]: ./installSeasideServer.md
 
 [4]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/configOSForServerAndClient.md#configure-linux-server-for-server
 [5]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/configOSForServerAndClient.md#configure-mac-for-server
-[6]: ./installDevKitServer.md
+
+[6]: ./installClientOnSameNode.md
 
 [7]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/configOSForServerAndClient.md#configure-linux-desktop-for-client
 [8]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/configOSForServerAndClient.md#configure-mac-for-client
 [9]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/configOSForServerAndClient.mdd#configure-windows-for-client
-[10]:./installDevKitClient.md
 
-[11]:./configOSForRemoteWithXForwarding.md#configure-linux-server-for-client-and-server
-[12]:./configOSForRemoteWithXForwarding.md#configure-mac-as-x-forwarding-client
+[10]: ./installClientOnSeparateNode.md
+
+[11]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/configOSForRemoteWithXForwarding.md#configure-linux-server-for-client-and-server
+[12]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/configOSForRemoteWithXForwarding.md#configure-mac-as-x-forwarding-client
 
 [13]: ../gettingStartedWithTode.md
+[14]: ../gettingStartedWithSeaside.md
 
 [15]: http://unix.stackexchange.com/questions/12755/how-to-forward-x-over-ssh-from-ubuntu-machine
 [25]: http://xmodulo.com/how-to-speed-up-x11-forwarding-in-ssh.html
