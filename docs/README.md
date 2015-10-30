@@ -1,4 +1,4 @@
-### Documentation to the GsDevKit Seaside Project
+### Documentation for the GsDevKit Seaside Project
 
 This directory contains documentation on installing and using the GsDevKit and Seaside environment.  
 
