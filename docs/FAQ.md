@@ -1,4 +1,4 @@
-####1.  How do I debug an error that appears in the web server?
+####1.*How do I debug an error that appears in the web server?*
 
 While using a webServer gem, errors in the Seaside code will not result in a walkback window popping up. Instead the default error handler snaps off a continuation and puts it into the Object Log.
 
