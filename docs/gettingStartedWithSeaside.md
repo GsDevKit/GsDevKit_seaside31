@@ -4,7 +4,9 @@ Once you have seaside loaded into your server Stone, you can start a web server 
 
 At the bash prompt, provided your path 
 
-startWebServer
+`
+seasideWebServer seaside_3210 --start
+`
 
 Use your web browser to connect to the web server, if it is running on the same node:
 
