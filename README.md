@@ -11,11 +11,13 @@ You  may install the Seaside31 project into an existing GsDevKit installation, o
 
 In addition, you will need to install a GsDevKit tODE client to do the development work, which can be on the same machine as the Seaside stone and web server, or on a different machine. 
 
+For installation instructions, [Installation Overview][1]
 
 ##FAQs
 1. [How do I debug an error that appears in the remote web server?][7]
 
 
+[1]: docs/installation/README.md
 [3]: https://github.com/GsDevKit/Seaside31
 [4]: http://seaside.st/
 [7]: docs/FAQ.md#1-how-do-i-debug-an-error-that-appears-in-the-web-server
