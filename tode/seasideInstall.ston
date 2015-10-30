@@ -1,0 +1,5 @@
+TDTopezLeafNode{#name:'seasideInstall',#contents:'#called from the seasideCreateStone shell script
+project install --local --url=http://gsdevkit.github.io/GsDevKit_home/Seaside31.ston 
+project install --local --url=http://gsdevkit.github.io/GsDevKit_home/ZincHTTPComponents.ston
+project install --local --url=http://gsdevkit.github.io/GsDevKit_home/GsApplicationTools.ston
+',#creationTime:DateAndTime['2015-10-20T16:13:22.5868239402771-07:00'],#modificationTime:DateAndTime['2015-10-20T16:15:40.1153779029846-07:00']}

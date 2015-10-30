@@ -39,5 +39,5 @@ stoneName="$1"
 shift
 
 $GS_HOME/bin/devKitCommandLine todeIt $stoneName << EOF
-/home/seaside/webServer $*
+/home/seaside/seasideWebServer $*
 EOF

@@ -1,6 +1,6 @@
-TDScriptLeafNode{#name:'webServer',#contents:'[ :topez :objIn :tokens :command :commandNode | 
+TDScriptLeafNode{#name:'seasideWebServer',#contents:'[ :topez :objIn :tokens :command :commandNode | 
   | opts args cmd |
-  \"for help: ./webServer -h\"
+  \"for help: ./seasideWebServer -h\"
   cmd := command command.
   command
     getOptsMixedLongShort:
@@ -110,13 +110,13 @@ TDScriptLeafNode{#name:'webServer',#contents:'[ :topez :objIn :tokens :command :
       TDManPage
         viewManPage:
           \'NAME
-  webServer - start/stop/restart seaside web servers
+  seasideWebServer - start/stop/restart seaside web servers
 SYNOPSIS
-  webServer [-h|--help] [--register=zinc|fastcgi|swazoo] [--port=<port-number>]
-  webServer [--start] [--stop] [--restart]
-  webServer [--debug=<port-number>]
-  webServer [--errorHandler=WARemoteDebuggingWalkbackErrorHandler|WAGemStoneProductionErrorHandler]
-  webServer [--breakpoints=set|clear]
+  seasideWebServer [-h|--help] [--register=zinc|fastcgi|swazoo] [--port=<port-number>]
+  seasideWebServer [--start] [--stop] [--restart]
+  seasideWebServer [--debug=<port-number>]
+  seasideWebServer [--errorHandler=WARemoteDebuggingWalkbackErrorHandler|WAGemStoneProductionErrorHandler]
+  seasideWebServer [--breakpoints=set|clear]
 
 
 DESCRIPTION
@@ -134,19 +134,19 @@ DESCRIPTION
   --breakpoints sets or clears useful seaside breakpoints.
 
 EXAMPLES
-  ./webServer --help
-  ./webServer --register=zinc --port=8383 --start
+  ./seasideWebServer --help
+  ./seasideWebServer --register=zinc --port=8383 --start
 
-  ./webServer --restart
-  ./webServer --start
-  ./webServer --stop
+  ./seasideWebServer --restart
+  ./seasideWebServer --start
+  ./seasideWebServer --stop
 
-  ./webServer --debug=8181
+  ./seasideWebServer --debug=8181
 
-  ./webServer --breakpoints=set
-  ./webServer --breakpoints=clear
+  ./seasideWebServer --breakpoints=set
+  ./seasideWebServer --breakpoints=clear
 
-  ./webServer --errorHandler=WARemoteDebuggingWalkbackErrorHandler
-  ./webServer --errorHandler=WAGemStoneProductionErrorHandler
+  ./seasideWebServer --errorHandler=WARemoteDebuggingWalkbackErrorHandler
+  ./seasideWebServer --errorHandler=WAGemStoneProductionErrorHandler
 \'
         topez: topez ] ]',#creationTime:DateAndTime['2014-06-19T10:09:47.03463697433472-07:00'],#modificationTime:DateAndTime['2014-08-27T12:02:16.509927034378-07:00']}

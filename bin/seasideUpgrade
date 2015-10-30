@@ -63,7 +63,7 @@ $GS_HOME/bin/upgradeStone $forceArg $sourceStoneName $targetStoneName $gsvers <<
 EOF
 
 $GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt $targetStoneName << EOF
-/home/seaside/upgradeSeaside
+/home/seaside/seasideUpgrade
 ${postUpgradeLoadScriptPath}
 EOF
 

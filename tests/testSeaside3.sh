@@ -10,6 +10,7 @@ export PATH=$PROJECT_HOME/bin:$PATH
 installServerSeaside -h
 seasideCreateStone -h
 seasideInstall -h
+seasideLoad -h
 seasideUpdate -h
 seasideUpgrade -h
 seasideWebServer -h

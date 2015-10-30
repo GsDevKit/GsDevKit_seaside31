@@ -65,6 +65,6 @@ mount @/sys/stone/dirs/GsDevKit_home/projects/seaside31/tode /home seaside # mou
 /home/seaside/createSeaside
 EOF
 
-$GS_HOME/shared/projects/seaside31/bin/seasideInstall $stoneName
+$GS_HOME/shared/projects/seaside31/bin/seasideLoad $stoneName
 
 echo "...finished $(basename $0)"

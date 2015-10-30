@@ -42,7 +42,7 @@ $GS_HOME/bin/startStone -b $stoneName
 echo "Update Seaside31 on stone: $stoneName"
 
 $GS_HOME/bin/devKitCommandLine todeIt $stoneName << EOF
-/home/seaside/updateSeaside
+/home/seaside/seasideUpdate
 EOF
 
 echo "...finished $(basename $0)"
