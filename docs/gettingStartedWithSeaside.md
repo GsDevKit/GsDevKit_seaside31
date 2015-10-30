@@ -14,7 +14,7 @@ Use your web browser to connect to the web server, if it is running on the same 
 
 
 
-[3]: ../../../docs/images/seasideBrowser.png
+[3]: images/seasideBrowser.png
 
 
 
