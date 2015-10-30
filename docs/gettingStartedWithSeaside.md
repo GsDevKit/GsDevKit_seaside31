@@ -1,35 +1,18 @@
 ##Getting Started With Seaside
 
+Once you have seaside loaded into your server Stone, you can start a web server and verify you can connect to it.
+
+At the bash prompt, provided your path 
+
+startWebServer
+
+Use your web browser to connect to the web server, if it is running on the same node:
+
+![seaside web browser][3]
 
 
-###webServer script
-Within tODE, register the zinc adaptor (swazoo and fastcgi are also options):
 
-```Shell
-cd /home/seaside
-./webServer --register=zinc --port=8383
-```
-
-The following options can be used to control the registered adaptor:
-
-```Shell
-./webServer --start    # start adaptor
-./webServer --stop     # stop adaptor
-./webServer --restart  # stop/start adaptor
-```
-
-The script launches a separate GemStone vm to serve as a web server independent of your tODE gem.
-
-Once you've started the webServer, you can use your web browser to connect to the server:
-
-![seaside web browser][6]
-
-
-[1]: ../../../docs/images/browseProjectEntry.png
-[2]: ../../../docs/images/projectListMenu.png
-[3]: https://github.com/GsDevKit/Seaside31
-[4]: http://seaside.st/
-[5]: ../../../docs/images/editProjectEntry.png
+[3]: ../../../docs/images/seasideBrowser.png
 
 
 
