@@ -61,7 +61,7 @@ gsvers="$2"
 $GS_HOME/bin/createStone $forceArg $noRestartArg $snapshotFileArg $stoneName $gsvers
 
 $GS_HOME/bin/devKitCommandLine todeIt $stoneName << EOF
-mount @/sys/stone/dirs/GsDevKit_home/projects/seaside31/tode /home seaside # mount the seaside directory in tODE
+mount @/sys/stone/dirs/GsDevKit_home/etc/GsDevKit_seaside31/tode /home seaside # mount the seaside directory in tODE
 /home/seaside/createSeaside
 EOF
 
