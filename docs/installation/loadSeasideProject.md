@@ -35,5 +35,8 @@ the whole installation process.  Using the tODE client, you can load the seaside
    If you are using SSH port forwarding, you will also need to setup port forwarding on the web services port (in these 
    instructions, port 8383).  [SSH port forwarding instructions][2]
    
+4. [Verify the Web Server][3]
+   
 [1]: https://github.com/GsDevKit/GsDevKit_home/blob/master/docs/installation/README.md
 [2]: ./installClientOnSeparateNode.md#setup-ssh-port-forwarding
+[3]: ../gettingStartedWithSeaside.md
