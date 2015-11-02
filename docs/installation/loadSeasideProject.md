@@ -31,6 +31,7 @@ the whole installation process.  Using the tODE client, you can load the seaside
 5. **Add port forwarding for the web server**
 
    If you are using SSH port forwarding, you will also need to setup port forwarding on the web services port (in these 
-   instructions, port 8383).  [SSH port forwarding instructions][1]
+   instructions, port 8383).  [SSH port forwarding instructions][2]
    
-   [1]: ./installClientOnSeparateNode.md#setup-ssh-port-forwarding
+[1]: ./installSeasideServer.md
+[2]: ./installClientOnSeparateNode.md#setup-ssh-port-forwarding
