@@ -18,7 +18,7 @@ the whole installation process.  Using the tODE client, you can load the seaside
    Then, at the tODE shell, execute:
 
    ```
-   project install --url=http://gsdevkit.github.io/GsDevKit_seaside31/Seaside3.ston
+   project install --url=http://gsdevkit.github.io/GsDevKit_seaside31/Seaside31.ston
    ```
 
 4. **Add project to your machine search path**
