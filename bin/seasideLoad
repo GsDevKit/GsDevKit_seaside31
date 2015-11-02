@@ -10,18 +10,15 @@ echo "================="
 
 usage() {
   cat <<HELP
-USAGE: $(basename $0) [-h] 
-Install the Seaside31 project artifacts into GsDevKit_home:
-  clone the github projects for Seaside31, Zinc and GsApplicationTools
-  creat project entries for those three projects in 
-    \$GS_HOME/sys/local/server/projects
+USAGE: $(basename $0) [-h] <stone-name>
+Load Seaside31 into <stone-name> using the \`/home/seaside/installSeaside\` tODE script.
 
 OPTIONS
   -h show usage
 
 EXAMPLES
   $(basename $0) -h
-  $(basename $0) 
+  $(basename $0) seaside_329
 
 HELP
 }
@@ -35,8 +32,15 @@ source ${GS_HOME}/bin/defGsDevKit.env
 source ${GS_HOME}/bin/private/shFunctions
 getOpts_help $@ #parse standard (-h) options
 
+if [ $# -ne 1 ]; then
+  usage; exit 1
+fi
+
+stoneName="$1"
+
 $GS_HOME/bin/devKitCommandLine todeIt $stoneName << EOF
-/home/seaside3/seasideInstall
+/home/seaside/seasideInstall
+/home/seaside/seasideLoad
 EOF
 
 echo "...finished $(basename $0)"

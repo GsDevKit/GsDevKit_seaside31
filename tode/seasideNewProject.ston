@@ -1,0 +1,83 @@
+TDScriptLeafNode{#name:'seasideNewProject',#contents:'[ :topez :objIn :tokens :command :commandNode | 
+  | opts args |
+  \"for help: ./seasideNewProject -h\"
+  command
+    getOptsMixedLongShort:
+      {#(\'help\' $h #\'none\').
+      #(\'stone\' nil #\'none\').
+      #(\'local\' nil #\'none\')}
+    optionsAndArguments: [ :options :operands | 
+      opts := options.
+      args := operands ].
+  opts
+    at: \'help\'
+    ifAbsent: [ 
+      | projectTool projectName projectEntryPath packageName gitRootPath browseTool |
+      projectTool := topez toolInstanceFor: \'project\'.
+      projectEntryPath := opts
+        at: \'stone\'
+        ifPresent: [ :ignored | TDProjectEntryDefinition sys_stone_projects ]
+        ifAbsent: [ 
+          \"--local default\"
+          TDProjectEntryDefinition sys_local_server_projects ].
+      gitRootPath := TDProjectEntryDefinition defaultGitRootPath.
+      projectName := args at: 1.
+      packageName := projectName , \'-Core\'.
+      projectTool
+        projectNew: projectName
+        projectEntryPath: projectEntryPath
+        packageName: packageName
+        gitRootPath: gitRootPath
+        requiredProjects: #(\'Seaside3\')
+        dependencies: {(packageName -> #(\'Seaside3\'))}
+        repositories:
+          {(\'Seaside3\' -> #(\'github://GsDevKit/Seaside31/3.1.?/repository\'))}
+        superclassName: \'WAComponent\'
+        applicationClassCreationBlock: [ :superClassName :projectName :packageName | 
+          | clsTool newClass |
+          clsTool := topez toolInstanceFor: \'cls\'.
+          newClass := clsTool
+            clscreate: projectName , \'Component\'
+            subclassOf: (Smalltalk at: superClassName)
+            category: packageName.
+          newClass
+            compile:
+              \'renderContentOn: html
+  html heading: \'\'Hello world from: \'\', \'
+                , projectName printString
+            classified: \'rendering\'.
+          newClass class
+            compile:
+              \'initialize
+  WAAdmin register: self asApplicationAt: \'
+                , projectName printString
+            classified: \'initialization\'.
+          newClass initialize ].
+      browseTool := topez toolInstanceFor: \'browse\'.
+      browseTool browseClassesInProject: projectName ]
+    ifPresent: [ :ignored | 
+      TDManPage
+        viewManPage:
+          \'NAME
+  seasideNewProject - Create new Seaside project
+SYNOPSIS
+  seasideNewProject [-h|--help] [--stone | --local] <project-name>
+
+DESCRIPTION
+  Create a new Seaside project: project entry, baseline, package, git 
+  repository and a simple subclass of WAComponent. By default, the project
+  entry is created in the /sys/local/server/projects directory (--local)
+  and is visible to all stones. If you want to keep the new project, private
+  to the current stone, then use the --stone option.
+
+  This script is a customization of the `project new` command.
+
+EXAMPLES
+  ./seasideNewProject -h
+  ./seasideNewProject Foo
+
+SEE ALSO
+  man project new
+  browse method --spec `TDMetacelloTool>>projectnew`
+\'
+        topez: topez ] ]',#creationTime:DateAndTime['2015-10-31T07:58:54.2109808921814-07:00'],#modificationTime:DateAndTime['2015-10-31T14:09:36.0562438964843-07:00']}

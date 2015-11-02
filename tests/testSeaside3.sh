@@ -10,6 +10,7 @@ export PATH=$PROJECT_HOME/bin:$PATH
 installServerSeaside -h
 seasideCreateStone -h
 seasideInstall -h
+seasideLoad -h
 seasideUpdate -h
 seasideUpgrade -h
 seasideWebServer -h
@@ -27,3 +28,8 @@ seasideWebServer seaside --start
 # Doesn't appear that this works on travis ... can't connect to host
 # curl http://127.0.0.1:8383
 seasideWebServer seaside --stop
+
+$GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt ${STONENAME3} << EOF
+/home/seasideNewProject -h
+/home/seasideNewProject Foo
+EOF
