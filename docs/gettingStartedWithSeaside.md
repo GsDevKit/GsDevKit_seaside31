@@ -8,7 +8,9 @@ At the bash prompt, provided your $PATH includes $GS_HOME/shared/projects/GsDevK
 seasideWebServer seaside_3210 --start
 `
 
-Use your web browser to connect to the web server, if it is running on the same node:
+Use your web browser to connect to the web server.  
+
+For example, if it is running on the same node, and you used the port 8383, you should get the seaside welcome page:
 
 ![seaside web browser][3]
 
