@@ -5,7 +5,7 @@ the whole installation process.  Using the tODE client, you can load the seaside
 
 1. **Start a tODE client**
 
-   For example, if your tODE client name is *tode1*,
+   For example, if your tODE client name is *tode1*, at the bash command line, execute:
 
    ```
    startClient tode1
@@ -14,6 +14,8 @@ the whole installation process.  Using the tODE client, you can load the seaside
 2. **Execute the project load script**
 
    Open a tODE shell on your repository, using the popup menu item  **Open Shell**. 
+   
+   Then, at the tODE shell, execute:
 
    ```
    project install --url=http://gsdevkit.github.io/GsDevKit_seaside31/Seaside3.ston
