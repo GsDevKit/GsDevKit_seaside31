@@ -60,10 +60,10 @@ fi
 stoneName=$1
 vers=$2
 $GS_HOME/bin/setupGsDevKit $modeArg $organizationArg server $vers
-$GS_HOME/shared/projects/seaside31/bin/seasideCreateStone $stoneName $vers
+$GS_HOME/etc/GsDevKit_seaside31/bin/seasideCreateStone $stoneName $vers
 
 if [ "${zincHttpPort}x" != "x" ] ; then
-  $GS_HOME/shared/projects/seaside31/bin/seasideWebServer $stoneName --register=zinc --port=$zincHttpPort
+  $GS_HOME/etc/GsDevKit_seaside31/bin/seasideWebServer $stoneName --register=zinc --port=$zincHttpPort
 fi
 
 echo "...finished $(basename $0)"
