@@ -22,9 +22,9 @@ before_script:
   - ls $PROJECT_HOME
   - ls $GS_HOME
   - ls $GS_HOME/etc
-  - ls $GS_HOME/etc/GsDevKit_seaside
-  - ls $GS_HOME/etc/GsDevKit_seaside/tests
+  - ls $GS_HOME/etc/GsDevKit_seaside31
+  - ls $GS_HOME/etc/GsDevKit_seaside31/tests
 
 
 script:
-  - $PROJECT_HOME/etc/GsDevKit_seaside/tests/testTravisCI.sh
+  - $PROJECT_HOME/etc/GsDevKit_seaside31/tests/testTravisCI.sh
