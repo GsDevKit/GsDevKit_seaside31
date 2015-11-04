@@ -37,8 +37,8 @@ $GS_HOME/bin/private/clone_sys_local -c https
 $GS_HOME/tests/travisCustomize.sh
 
 case $TEST in
-  Seaside3) $GS_HOME/tests/testSeaside3.sh ;;
-  Seaside3Upgrade) $GS_HOME/tests/testSeaside3Upgrade.sh ;;
+  "Seaside3") $GS_HOME/tests/testSeaside3.sh ;;
+  "Seaside3Upgrade") $GS_HOME/tests/testSeaside3Upgrade.sh ;;
   *)
     echo "Unknown test: $TEST"
     exit 1
