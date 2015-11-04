@@ -17,14 +17,9 @@ before_script:
   - export GS_TRAVIS=true
   - cd etc
   - ln -s $PROJECT_HOME .
-  - echo $GS_HOME
-  - echo $PROJECT_HOME
-  - ls $PROJECT_HOME
-  - ls $GS_HOME
-  - ls $GS_HOME/etc
-  - ls $GS_HOME/etc/GsDevKit_seaside31
   - ls $GS_HOME/etc/GsDevKit_seaside31/tests
 
 
 script:
-  - $PROJECT_HOME/etc/GsDevKit_seaside31/tests/testTravisCI.sh
+  - $GS_HOME/etc/GsDevKit_seaside31/tests/testTravisCI.sh
+
