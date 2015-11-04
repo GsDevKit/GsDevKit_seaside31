@@ -30,6 +30,6 @@ seasideWebServer seaside --start
 seasideWebServer seaside --stop
 
 $GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt seaside << EOF
-/home/seasideNewProject -h
-/home/seasideNewProject Foo
+/home/seaside/seasideNewProject -h
+/home/seaside/seasideNewProject Foo
 EOF
