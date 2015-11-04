@@ -15,7 +15,9 @@ before_script:
   - export GS_HOME="$(pwd)"
   - export PATH=$GS_HOME/bin:$PATH
   - export GS_TRAVIS=true
+  - cd etc
+  - ln -s $PROJECT_HOME .
 
 
 script:
-  - tests/testTravisCI.sh
+  - $GS_HOME/etc/GsDevKit_seaside/tests/testTravisCI.sh
