@@ -18,7 +18,7 @@ seasideWebServer -h
 installServerSeaside -c https -z 8383 seaside $GS_VERSION
 
 # Run Seaside unit tests
-seasideTest seaside
+seasideTest seaside  # have to install the Tests group!
 
 seasideUpdate seaside 
 
