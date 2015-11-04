@@ -19,7 +19,7 @@ installServerSeaside -c https -z 8383 seaside $GS_VERSION
 
 # Install and Run Seaside unit tests
 $GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt seaside << EOF
-project load --loads=`#('Tests')` Seaside3
+project load --loads=\`#('Tests')\` Seaside3
 EOF
 seasideTest seaside 
 
