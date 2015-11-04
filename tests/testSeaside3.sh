@@ -17,8 +17,11 @@ seasideWebServer -h
 
 installServerSeaside -c https -z 8383 seaside $GS_VERSION
 
-# Run Seaside unit tests
-seasideTest seaside  # have to install the Tests group!
+# Install and Run Seaside unit tests
+$GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt seaside << EOF
+project load --loads=`#('Tests')` Seaside3
+EOF
+seasideTest seaside 
 
 seasideUpdate seaside 
 
