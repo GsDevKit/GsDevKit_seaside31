@@ -29,7 +29,7 @@ seasideWebServer seaside --start
 # curl http://127.0.0.1:8383
 seasideWebServer seaside --stop
 
-$GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt ${STONENAME3} << EOF
+$GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt seaside << EOF
 /home/seasideNewProject -h
 /home/seasideNewProject Foo
 EOF
