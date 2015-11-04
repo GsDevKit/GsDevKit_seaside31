@@ -1,4 +1,4 @@
-# Installation Overview
+# GsDevKit With Seaside Installation Overview
 
 GsDevKit is a client-server environment, involving a GUI development environment (tODE) based on Pharo, and a 
 server (stone) based on GemStone/S 64 bit.  The Seaside project is loaded into the server stone; then a web server 
