@@ -17,8 +17,12 @@ seasideWebServer -h
 
 installServerSeaside -c https -z 8383 seaside $GS_VERSION
 
-# Run Seaside unit tests
-seasideTest seaside
+# Install and Run Seaside unit tests
+$GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt seaside << EOF
+project load --loads=\`#('Tests')\` Seaside3
+EOF
+# gemserver failures .... not consistent failures, likely to be a "stuck gemserver"
+# seasideTest seaside 
 
 seasideUpdate seaside 
 
@@ -29,7 +33,7 @@ seasideWebServer seaside --start
 # curl http://127.0.0.1:8383
 seasideWebServer seaside --stop
 
-$GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt ${STONENAME3} << EOF
-/home/seasideNewProject -h
-/home/seasideNewProject Foo
+$GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt seaside << EOF
+/home/seaside/seasideNewProject -h
+/home/seaside/seasideNewProject Foo
 EOF

@@ -1,4 +1,4 @@
-# Installation Overview
+# GsDevKit With Seaside Installation Overview
 
 GsDevKit is a client-server environment, involving a GUI development environment (tODE) based on Pharo, and a 
 server (stone) based on GemStone/S 64 bit.  The Seaside project is loaded into the server stone; then a web server 
@@ -7,8 +7,11 @@ the Seaside code for your application.
 
 The installation process involves cloning projects from github, downloading and 
 configuring Pharo and GUI client components, and downloading, configuring, and starting the GemStone server 
-(the stone process and supporting processes).  While the details are handled for you by the installation scripts, 
-there are some decisions that  must be made  before installing.
+(the stone process and supporting processes).  
+
+If you have already installed GsDevKit_home, you do not need to repeat this; you can load the seaside31 project into your existing installation.  See [Instructions to load Seaside into existing GsDevKit][20].  The instructions that follow are for a new installation of GsDevKit for Seaside-based development.
+
+There are some decisions about system topography that must be made before installing.
 
 GsDevKit can be installed under three configurations.
 
@@ -156,4 +159,7 @@ You can connect using X-forwarding from a Linux desktop (that is, a Linux instal
 [14]: ../gettingStartedWithSeaside.md
 
 [15]: http://unix.stackexchange.com/questions/12755/how-to-forward-x-over-ssh-from-ubuntu-machine
-[25]: http://xmodulo.com/how-to-speed-up-x11-forwarding-in-ssh.html
+[16]: http://xmodulo.com/how-to-speed-up-x11-forwarding-in-ssh.html
+
+[20]: ./loadSeasideProject.md
+
