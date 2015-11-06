@@ -53,7 +53,7 @@ seasideInstall*  seasideLoad*  seasideNewProject*  seasideTest* seasideUpdate*  
 
 ### Start the web server
 
-To start the web server from within tODE, execute teh following at the tODE shell:
+To start the web server from within tODE, execute the following at the tODE shell:
 
 ```
 tode 1 > /home/seaside/seasideWebServer --start
