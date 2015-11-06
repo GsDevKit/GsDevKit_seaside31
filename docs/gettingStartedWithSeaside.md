@@ -15,11 +15,11 @@ Use your web browser to connect to the web server.
 
 For example, if it is running on the same node, and you used the port 8383, you should get the seaside welcome page:
 
-![seaside web browser][3]
+![seaside in web browser][3]
 
 
 
-[3]: images/seasideWelcome.png
+[3]: images/SeasideWelcome.png
 
 
 
