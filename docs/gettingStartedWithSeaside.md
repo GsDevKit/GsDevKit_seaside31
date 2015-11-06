@@ -19,7 +19,7 @@ For example, if it is running on the same node, and you used the port 8383, you 
 
 
 
-[3]: images/seasideBrowser.png
+[3]: images/seasideWelcome.png
 
 
 
