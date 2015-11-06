@@ -39,7 +39,6 @@ fi
 stoneName="$1"
 
 $GS_HOME/bin/devKitCommandLine todeIt $stoneName << EOF
-/home/seaside/seasideInstall
 /home/seaside/seasideLoad
 EOF
 

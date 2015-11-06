@@ -61,10 +61,11 @@ gsvers="$2"
 $GS_HOME/bin/createStone $forceArg $noRestartArg $snapshotFileArg $stoneName $gsvers
 
 $GS_HOME/bin/devKitCommandLine todeIt $stoneName << EOF
-mount @/sys/stone/dirs/GsDevKit_home/etc/GsDevKit_seaside31/tode /home seaside # mount the seaside directory in tODE
-/home/seaside/createSeaside
+mount $GS_HOME/etc/GsDevKit_seaside31/tode /home seaside
+project entry --url=http://gsdevkit.github.io/GsDevKit_home/Seaside31.ston /sys/local/server/projects
 EOF
 
-$GS_HOME/shared/projects/seaside31/bin/seasideLoad $stoneName
+$GS_HOME/etc/GsDevKit_seaside31/bin/seasideInstall $stoneName
+$GS_HOME/etc/GsDevKit_seaside31/bin/seasideLoad $stoneName
 
 echo "...finished $(basename $0)"

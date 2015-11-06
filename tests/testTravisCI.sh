@@ -34,11 +34,11 @@ fi
 $GS_HOME/bin/private/clone_sys_local -c https
 
 # Customize the scripts used by tODE (https://github.com/dalehenrich/tode/issues/226)
-$GS_HOME/tests/travisCustomize.sh
+$GS_HOME/etc/GsDevKit_seaside31/tests/travisCustomize.sh
 
 case $TEST in
-  Seaside3) $GS_HOME/tests/testSeaside3.sh ;;
-  Seaside3Upgrade) $GS_HOME/tests/testSeaside3Upgrade.sh ;;
+  Seaside3) $GS_HOME/etc/GsDevKit_seaside31/tests/testSeaside3.sh ;;
+  Seaside3Upgrade) $GS_HOME/etc/GsDevKit_seaside31/tests/testSeaside3Upgrade.sh ;;
   *)
     echo "Unknown test: $TEST"
     exit 1

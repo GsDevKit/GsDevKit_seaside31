@@ -35,8 +35,14 @@ source ${GS_HOME}/bin/defGsDevKit.env
 source ${GS_HOME}/bin/private/shFunctions
 getOpts_help $@ #parse standard (-h) options
 
+if [ $# -ne 1 ]; then
+  usage; exit 1
+fi
+
+stoneName="$1"
+
 $GS_HOME/bin/devKitCommandLine todeIt $stoneName << EOF
-/home/seaside3/seasideInstall
+/home/seaside/seasideInstall
 EOF
 
 echo "...finished $(basename $0)"
