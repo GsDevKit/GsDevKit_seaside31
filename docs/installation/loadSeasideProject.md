@@ -18,7 +18,7 @@ the whole installation process.  Using the tODE client, you can load the seaside
    Then, at the tODE shell, execute:
 
    ```
-   project install --url=http://gsdevkit.github.io/GsDevKit_seaside31/Seaside31.ston
+   project install --url=http://gsdevkit.github.io/GsDevKit_home/Seaside3.ston
    ```
 
 4. **Add project to your machine search path**
@@ -27,7 +27,7 @@ the whole installation process.  Using the tODE client, you can load the seaside
    the web server and other operations from the bash command line. These operations can also be performed from the tODE shell.
 
    ```
-   export PATH=$GS_HOME/shared/projects/GsDevKit_seaside31/bin:$PATH
+   export PATH=$GS_HOME/etc/GsDevKit_seaside31/bin:$PATH
    ```
    
 5. **Add port forwarding for the web server**
