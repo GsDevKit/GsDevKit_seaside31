@@ -98,7 +98,7 @@ export GS_HOME=`pwd`
 cd $GS_HOME/etc
 git clone https://github.com/GsDevKit/GsDevKit_seaside31.git
 export PATH=$GS_HOME/bin:$GS_HOME/etc/GsDevKit_seaside31/bin:$PATH
-installServerSeaside -c https -z 8383 seaside_3211 3.2.10
+installServerSeaside -c https -z 8383 seaside_3210 3.2.10
 ```
 
 
