@@ -39,7 +39,7 @@ $GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt seaside << EOF
 EOF
 
 # test the url based load seaside commands in new stone 
-createStone seaside_1 $Gs_VERSION
+createStone seaside_1 $GS_VERSION
 
 $GS_HOME/bin/devKitCommandLine todeIt seaside_1 << EOF
 mount $GS_HOME/etc/GsDevKit_seaside31/tode /home seaside
