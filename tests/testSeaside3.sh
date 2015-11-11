@@ -37,3 +37,13 @@ $GS_HOME/bin/private/gsDevKitTodeCommandLine todeIt seaside << EOF
 /home/seaside/seasideNewProject -h
 /home/seaside/seasideNewProject Foo
 EOF
+
+# test the url based load seaside commands in new stone 
+createStone seaside_1 $Gs_VERSION
+
+$GS_HOME/bin/devKitCommandLine todeIt seaside_1 << EOF
+mount $GS_HOME/etc/GsDevKit_seaside31/tode /home seaside
+project entry --url=http://gsdevkit.github.io/GsDevKit_home/Seaside31.ston /sys/local/server/projects
+project install --url=http://gsdevkit.github.io/GsDevKit_home/Seaside31.ston /sys/local/server/projects
+project load --url=http://gsdevkit.github.io/GsDevKit_home/Seaside31.ston /sys/local/server/projects
+EOF
