@@ -56,14 +56,14 @@ The following steps are involved in installing the GsDevKit server.  For an exam
 
 4. **Clone the seaside project into the projects directory**
    ```
-   cd $GS_HOME/shared/projects
+   cd $GS_HOME/etc
    git clone https://github.com/GsDevKit/GsDevKit_seaside31.git
    ```
 5. **Add the seaside projects directory to your path**
  
    This makes it easier to work with seaside-specific scripts.
    ```
-   export PATH=$GS_HOME/shared/projects/GsDevKit_seaside31/bin:$PATH
+   export PATH=$GS_HOME/etc/GsDevKit_seaside31/bin:$PATH
    ```
    
 4. **Perform the Server installation**
@@ -95,10 +95,10 @@ git clone https://github.com/GsDevKit/GsDevKit_home.git
 cd GsDevKit_home
 git checkout -b gsdevkit 
 export GS_HOME=`pwd`
-cd $GS_HOME/shared/projects
+cd $GS_HOME/etc
 git clone https://github.com/GsDevKit/GsDevKit_seaside31.git
-export PATH=$GS_HOME/bin:$GS_HOME/shared/projects/GsDevKit_seaside31/bin:$PATH
-installServerSeaside -c https -z 8383 seaside_3211 3.2.10
+export PATH=$GS_HOME/bin:$GS_HOME/etc/GsDevKit_seaside31/bin:$PATH
+installServerSeaside -c https -z 8383 seaside_3210 3.2.10
 ```
 
 
