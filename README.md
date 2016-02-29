@@ -21,6 +21,3 @@ For installation instructions, [Installation Overview][1]
 [3]: https://github.com/GsDevKit/Seaside31
 [4]: http://seaside.st/
 [7]: docs/FAQ.md#1-how-do-i-debug-an-error-that-appears-in-the-web-server
-
-
-
