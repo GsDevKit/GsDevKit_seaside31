@@ -1,4 +1,4 @@
-#Seaside 31 for GsDevKit [![gs_master branch:](https://travis-ci.org/GsDevKit/Seaside31.png?branch=gs_master)](https://travis-ci.org/GsDevKit/Seaside31)
+#Seaside 31 for GsDevKit [![gs_master branch:](https://travis-ci.org/GsDevKit/GsDevKit_seaside31.png?branch=master)](https://travis-ci.org/GsDevKit/GsDevKit_seaside31)
 
 Seaside is a powerful framework for developing web applications. Seaside applications are composed of a tree of stateful web components that can easily implement sophisticated application behavior.
 
