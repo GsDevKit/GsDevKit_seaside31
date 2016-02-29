@@ -14,7 +14,7 @@ if [ -e "$osPrereqsSysSetup" ]; then
 else
   # install OS prereqs which includes gdb, which should give us a C stack for 
   # bug 44491
-  $GS_HOME/bin/utils/installOsPrereqs
+  $GS_HOME/bin/utils/installOsPrereqs both
 fi
 
 if [ "${STONENAME1}x" = "x" ] ; then
