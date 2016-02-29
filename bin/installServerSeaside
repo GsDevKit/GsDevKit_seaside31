@@ -59,7 +59,7 @@ if [ $# -ne 2 ]; then
 fi
 stoneName=$1
 vers=$2
-$GS_HOME/bin/setupGsDevKit $modeArg $organizationArg server $vers
+$GS_HOME/bin/setupGsDevKit $modeArg $organizationArg server
 $GS_HOME/etc/GsDevKit_seaside31/bin/seasideCreateStone $stoneName $vers
 
 if [ "${zincHttpPort}x" != "x" ] ; then
